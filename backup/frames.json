@@ -1,6 +1,30 @@
 [
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 11,
+    "color_g": 20,
+    "color_r": 27,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "008d528e-661a-4da2-9eab-45c9ef435fca",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p9lq-9kx628vg.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p9lq-9kx628vg.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Orlando Bloom",
       "Eva Green",
       "Jeremy Irons",
@@ -26,6 +50,33 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2005"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 126,
+    "color_g": 125,
+    "color_r": 120,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "02ce0f2a-c1f3-4561-8e82-b7308ba19eca",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc71e-waa7y7pd.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc71e-waa7y7pd.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
   },
   {
     "actors": [
@@ -163,6 +214,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 71,
+    "color_g": 75,
+    "color_r": 78,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "070d40a1-339a-46c3-93f7-03772b122c66",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p1fh-nxgmrg0j.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p1fh-nxgmrg0j.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Leonardo DiCaprio",
       "Tom Hardy",
       "Domhnall Gleeson",
@@ -189,6 +264,33 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 20,
+    "color_g": 50,
+    "color_r": 68,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "081e5ba4-418c-4054-96e1-9b36a0c5f8bf",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc8vq-9jgftte5.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc8vq-9jgftte5.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "Edward Norton",
       "Brad Pitt",
       "Helena Bonham Carter",
@@ -211,6 +313,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1999"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 93,
+    "color_g": 76,
+    "color_r": 77,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "0aaebf33-54b5-4a2e-a7c4-98897f6179a4",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p4rf-23z97xet.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p4rf-23z97xet.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -288,6 +414,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1999"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 127,
+    "color_g": 131,
+    "color_r": 131,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "0fe169a0-a3dd-4227-b062-4c1b05b51ae4",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p72l-2xf7poi3.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p72l-2xf7poi3.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -397,6 +547,33 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 121,
+    "color_g": 132,
+    "color_r": 122,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "13aa2514-2a61-4655-8762-f9e0d2e498c5",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqcakh-3yxtmhsx.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqcakh-3yxtmhsx.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "George MacKay",
       "Dean-Charles Chapman",
       "Mark Strong",
@@ -471,6 +648,81 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1999"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 104,
+    "color_g": 101,
+    "color_r": 102,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "17b156a0-f253-47a1-8007-b3f64929503b",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p5ys-wptr8mub.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p5ys-wptr8mub.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 14,
+    "color_g": 34,
+    "color_r": 74,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "19a24c9a-3b00-44ed-9e2f-0a2d403079ca",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p5bn-eabifemt.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p5bn-eabifemt.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 78,
+    "color_g": 79,
+    "color_r": 63,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "1a06b1a7-3d1a-4f68-95d0-aefb2c9b210c",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc7pl-rhm76kea.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc7pl-rhm76kea.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
   },
   {
     "actors": [
@@ -632,6 +884,54 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 86,
+    "color_g": 65,
+    "color_r": 62,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "1ce0b6e1-1faa-4c60-b405-31a1399a7595",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p8b6-tddnxmph.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p8b6-tddnxmph.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 55,
+    "color_g": 41,
+    "color_r": 33,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "1ce0c144-0bd1-4f66-ace2-bce0c6efcc3c",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pca0-f1qbhn7b.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pca0-f1qbhn7b.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "George MacKay",
       "Dean-Charles Chapman",
       "Mark Strong",
@@ -655,6 +955,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2019"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 239,
+    "color_g": 231,
+    "color_r": 222,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "1da2fbf4-294d-42c7-9012-99b5ce800eda",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p6ms-3do3mf7d.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p6ms-3do3mf7d.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -686,6 +1010,57 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 53,
+    "color_g": 49,
+    "color_r": 36,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "22232f58-7255-42b1-a388-f1b519f4b4d7",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc61w-f6ajslf7.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc61w-f6ajslf7.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 24,
+    "color_g": 29,
+    "color_r": 23,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "229a07e3-194c-44ae-a60b-3ea9c8cdbd5b",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p8xa-4nojy5j6.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p8xa-4nojy5j6.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Jean Reno",
       "Natalie Portman",
       "Gary Oldman",
@@ -709,6 +1084,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1994"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 5,
+    "color_g": 16,
+    "color_r": 33,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "243b12fd-59b3-4eb2-b736-c6af42e5e9ed",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p8ys-tdwfc9ht.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p8ys-tdwfc9ht.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -762,6 +1161,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2005"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 95,
+    "color_g": 97,
+    "color_r": 99,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "269fd8b4-bbe0-4ed4-b3fa-c2591fbd5f72",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p8yw-zar7o73c.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p8yw-zar7o73c.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -870,6 +1293,33 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 43,
+    "color_g": 36,
+    "color_r": 23,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "2cba7d09-db22-4f30-893e-a1697d409c9a",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc4th-62u484eq.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc4th-62u484eq.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "Ryan Gosling",
       "Sandra Hüller",
       "James Ortiz",
@@ -947,6 +1397,33 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2025"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 54,
+    "color_g": 50,
+    "color_r": 38,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "311de4e8-60ba-4694-bb27-ed93241ced5b",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc8yg-gy5t9vkj.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc8yg-gy5t9vkj.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
   },
   {
     "actors": [
@@ -1082,6 +1559,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 21,
+    "color_g": 19,
+    "color_r": 20,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "3641d1a6-0fc3-4910-b189-77380019ea03",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p7oq-2qmw515l.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p7oq-2qmw515l.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Orlando Bloom",
       "Eva Green",
       "Jeremy Irons",
@@ -1213,6 +1714,78 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 150,
+    "color_g": 146,
+    "color_r": 144,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "3c9a83e6-4841-4fe3-84f8-c51f70a22e4a",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pavm-3ozu41xf.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pavm-3ozu41xf.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 145,
+    "color_g": 143,
+    "color_r": 145,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "3f7bfb6e-bd9c-48f3-84cc-cfca7d5ebf25",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pbis-osdvuj74.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pbis-osdvuj74.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 139,
+    "color_g": 134,
+    "color_r": 135,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "3fca819b-2ce1-4d8c-a8ab-f541db4a5508",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p42h-vmklpvzf.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p42h-vmklpvzf.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "George MacKay",
       "Dean-Charles Chapman",
       "Mark Strong",
@@ -1267,6 +1840,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 49,
+    "color_g": 45,
+    "color_r": 45,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "40f01a48-7cb8-4727-a291-2ae815d32e49",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p40r-629zfwkt.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p40r-629zfwkt.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Aaron Taylor-Johnson",
       "Alfie Williams",
       "Ralph Fiennes",
@@ -1315,6 +1912,60 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1994"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 103,
+    "color_g": 101,
+    "color_r": 86,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "436265a0-2846-4097-a7bd-606b73ee3703",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc6io-sgjm7n1g.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc6io-sgjm7n1g.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 43,
+    "color_g": 52,
+    "color_r": 47,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "43dfa953-9bcf-402a-a2e2-243aac51a1b3",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc9l8-3mu6g6gn.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc9l8-3mu6g6gn.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
   },
   {
     "actors": [
@@ -1395,6 +2046,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1999"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 127,
+    "color_g": 138,
+    "color_r": 154,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "47234e3e-d49e-455c-8e4a-642217e0f29a",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p1fg-vaoj1016.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p1fg-vaoj1016.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -1504,6 +2179,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1994"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 55,
+    "color_g": 61,
+    "color_r": 65,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "49a3a158-6425-49d1-844b-f72e9da28ad0",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pac9-q2ytijvf.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pac9-q2ytijvf.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -1747,6 +2446,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 53,
+    "color_g": 59,
+    "color_r": 63,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "54dbad68-4d80-40dc-ac1c-17909d3fa267",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p2o9-63nku55a.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p2o9-63nku55a.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Edward Norton",
       "Brad Pitt",
       "Helena Bonham Carter",
@@ -1800,6 +2523,54 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 71,
+    "color_g": 74,
+    "color_r": 82,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "58b751d3-7c7c-4b38-83cf-f16fdf6cd870",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p750-py0rlrfk.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p750-py0rlrfk.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 147,
+    "color_g": 168,
+    "color_r": 164,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "59474fe0-f222-432f-9d00-644ddf3bbcd3",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p2q0-764s5q2f.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p2q0-764s5q2f.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Leonardo DiCaprio",
       "Tom Hardy",
       "Domhnall Gleeson",
@@ -1849,6 +2620,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2014"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 115,
+    "color_g": 124,
+    "color_r": 132,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "5df45563-aae3-4071-ad86-a103ced994e5",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p9m2-903ca0s4.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p9m2-903ca0s4.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -1932,6 +2727,33 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 21,
+    "color_g": 23,
+    "color_r": 20,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "62b06163-9aee-42a4-870c-778bb7aae767",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc8hx-rqf0luwg.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc8hx-rqf0luwg.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "Malin Akerman",
       "Patrick Wilson",
       "Billy Crudup",
@@ -1955,6 +2777,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2009"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 117,
+    "color_g": 111,
+    "color_r": 116,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "65fc3454-ce27-4af5-864b-e76bbba8c29d",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p7l0-fz536rlv.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p7l0-fz536rlv.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -2007,6 +2853,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2009"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 13,
+    "color_g": 15,
+    "color_r": 21,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "67a4333c-c353-4ed6-954a-0302ffba11ae",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pazz-q3uy83xx.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pazz-q3uy83xx.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -2088,6 +2958,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 15,
+    "color_g": 35,
+    "color_r": 63,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "6bacef53-3230-4818-a106-df6d2fe4dc3f",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p4qg-w497h7ks.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p4qg-w497h7ks.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Christian Bale",
       "Heath Ledger",
       "Aaron Eckhart",
@@ -2140,6 +3034,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2026"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 18,
+    "color_g": 18,
+    "color_r": 18,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "6dc4407a-9422-4ee2-9d89-ac2c03f7be51",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p8bf-hzxfd7xg.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p8bf-hzxfd7xg.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -2453,6 +3371,33 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 76,
+    "color_g": 72,
+    "color_r": 63,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "7af25d50-5434-4444-8539-4bd272e048b0",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc7tm-qri6rvuf.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc7tm-qri6rvuf.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "Aaron Taylor-Johnson",
       "Alfie Williams",
       "Ralph Fiennes",
@@ -2741,6 +3686,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 73,
+    "color_g": 73,
+    "color_r": 75,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "8535cc76-6a97-45fd-8262-5a06a34f40d2",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pbi8-c27yt1kg.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pbi8-c27yt1kg.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Aaron Taylor-Johnson",
       "Alfie Williams",
       "Ralph Fiennes",
@@ -2900,6 +3869,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 42,
+    "color_g": 47,
+    "color_r": 49,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "8b209a5b-269c-43ee-96ef-7297b47cef01",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p1fh-oetl186s.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p1fh-oetl186s.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Matthew McConaughey",
       "Anne Hathaway",
       "Michael Caine",
@@ -2949,6 +3942,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2014"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 123,
+    "color_g": 113,
+    "color_r": 114,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "8c5b83bd-d518-47bc-86b7-d20b8a999584",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p4oc-k7ho1azj.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p4oc-k7ho1azj.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -3053,6 +4070,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2008"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 63,
+    "color_g": 85,
+    "color_r": 76,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "92e68766-f059-4f57-925a-877a739fc7b5",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p3c1-m8vl67o8.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p3c1-m8vl67o8.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -3322,6 +4363,57 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 123,
+    "color_g": 133,
+    "color_r": 124,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "9eabd19e-2637-4206-a212-a17cd9a7bee2",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqcais-cmwsfzyt.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqcais-cmwsfzyt.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 59,
+    "color_g": 64,
+    "color_r": 66,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "9fb7ee14-acbe-462a-8324-e4742d1d6d11",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p6fj-pmgihy4j.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p6fj-pmgihy4j.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Malin Akerman",
       "Patrick Wilson",
       "Billy Crudup",
@@ -3371,6 +4463,33 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2008"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 16,
+    "color_g": 31,
+    "color_r": 43,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "a16fd473-fa20-4b9b-ac81-f91d2e54113e",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc629-nfo0k9e9.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc629-nfo0k9e9.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
   },
   {
     "actors": [
@@ -3534,6 +4653,33 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 117,
+    "color_g": 111,
+    "color_r": 98,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "aa32d29c-7e6d-413a-89c4-6cdff2351063",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc9tk-x1njgjf2.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc9tk-x1njgjf2.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "Matthew McConaughey",
       "Anne Hathaway",
       "Michael Caine",
@@ -3612,6 +4758,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 12,
+    "color_g": 13,
+    "color_r": 13,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "abee8b5f-fbdb-44ba-9626-79e7f3d8c14e",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pc5j-d02v0q5p.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pc5j-d02v0q5p.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Edward Norton",
       "Brad Pitt",
       "Helena Bonham Carter",
@@ -3659,6 +4829,33 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1999"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 114,
+    "color_g": 108,
+    "color_r": 92,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "ae745175-038f-4043-b3cc-54d222485049",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc5xv-09ok40hi.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc5xv-09ok40hi.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
   },
   {
     "actors": [
@@ -3770,6 +4967,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 14,
+    "color_g": 23,
+    "color_r": 28,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "b1aa1201-b1e7-4554-b446-a515b1938f16",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p9j8-0gt3rwl1.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p9j8-0gt3rwl1.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Ryan Gosling",
       "Sandra Hüller",
       "James Ortiz",
@@ -3796,6 +5017,81 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2026"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 24,
+    "color_g": 33,
+    "color_r": 34,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "b3637b7b-5f30-4033-9ff8-0f37f69f7f5e",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc9ix-c9mtkfyx.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc9ix-c9mtkfyx.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 14,
+    "color_g": 17,
+    "color_r": 22,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "b5113dc9-9274-4c64-9cd6-d42cfc47887a",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pawu-dhj2i3ws.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pawu-dhj2i3ws.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 157,
+    "color_g": 143,
+    "color_r": 136,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "b54adafe-7147-4aab-a6bb-15172c055921",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pa7j-n8oqsf19.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pa7j-n8oqsf19.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -3883,6 +5179,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 76,
+    "color_g": 86,
+    "color_r": 83,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "b8eef606-d99c-4554-814b-d247060d2931",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pa62-2ts37fpm.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pa62-2ts37fpm.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Matthew McConaughey",
       "Anne Hathaway",
       "Michael Caine",
@@ -3963,6 +5283,33 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 2,
+    "color_g": 4,
+    "color_r": 9,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "bcc16c21-edfd-4950-a579-725041d40c3b",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqca59-t8tq1g35.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqca59-t8tq1g35.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "Orlando Bloom",
       "Eva Green",
       "Jeremy Irons",
@@ -4019,6 +5366,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 31,
+    "color_g": 26,
+    "color_r": 25,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "c1406b84-f17f-4cf4-8980-a2927326a467",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p8bq-0skcnxhi.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p8bq-0skcnxhi.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Leonardo DiCaprio",
       "Tom Hardy",
       "Domhnall Gleeson",
@@ -4068,6 +5439,54 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2025"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 116,
+    "color_g": 113,
+    "color_r": 108,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "c494b8a0-aa49-47a2-bac7-8d9b3b95c7f0",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p5rt-8p24et6b.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p5rt-8p24et6b.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 120,
+    "color_g": 126,
+    "color_r": 130,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "c55cdcc5-dbf0-4fb6-99aa-03c72f70722f",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p2th-38i4jldj.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p2th-38i4jldj.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -4146,6 +5565,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2008"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 30,
+    "color_g": 43,
+    "color_r": 60,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "c78bfdf9-ab91-49d3-94a8-3c75629c119a",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p5dj-xem0rtu8.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p5dj-xem0rtu8.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -4253,6 +5696,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 17,
+    "color_g": 14,
+    "color_r": 9,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "ca68a4d7-84eb-4e31-aa46-d6e74b4004a9",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pcr3-12tf37mu.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pcr3-12tf37mu.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Orlando Bloom",
       "Eva Green",
       "Jeremy Irons",
@@ -4356,6 +5823,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2014"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 24,
+    "color_g": 27,
+    "color_r": 28,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "ceabecdc-3536-4710-b2b6-9a4f54572d0f",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pc5s-p72knire.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pc5s-p72knire.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -4543,6 +6034,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 80,
+    "color_g": 88,
+    "color_r": 98,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "d3e9c2d5-2174-460d-b0ec-8b5707fdf00e",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p6w1-ahmodq4e.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p6w1-ahmodq4e.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Aaron Taylor-Johnson",
       "Alfie Williams",
       "Ralph Fiennes",
@@ -4649,6 +6164,33 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2026"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 59,
+    "color_g": 85,
+    "color_r": 102,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "d786b107-4365-43c4-b88c-978f273252d6",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc8hi-dd7k62fa.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc8hi-dd7k62fa.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
   },
   {
     "actors": [
@@ -4782,6 +6324,33 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 147,
+    "color_g": 140,
+    "color_r": 122,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "df144d80-0c73-4bc2-9118-207105097a38",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc856-lp8by4at.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc856-lp8by4at.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "Tim Robbins",
       "Morgan Freeman",
       "Bob Gunton",
@@ -4880,6 +6449,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "1994"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 95,
+    "color_g": 111,
+    "color_r": 129,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "e1d4a144-66eb-4cf6-a128-dd80f24db4a8",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p5cd-51za3whn.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p5cd-51za3whn.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -5040,6 +6633,87 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 130,
+    "color_g": 135,
+    "color_r": 123,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "e85b89e7-dbed-473e-8a2d-723a92e85abe",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc7u0-bpxuqb5h.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc7u0-bpxuqb5h.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 19,
+    "color_g": 22,
+    "color_r": 21,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "e93d08e8-0711-45fe-a25c-4a56147155d3",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc4th-ldgzr5qh.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc4th-ldgzr5qh.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 71,
+    "color_g": 79,
+    "color_r": 70,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "e95f925c-4844-4896-aa81-f88a1a7e45ac",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc76o-fbk0xjjv.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc76o-fbk0xjjv.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
       "Tim Robbins",
       "Morgan Freeman",
       "Bob Gunton",
@@ -5169,6 +6843,57 @@
   },
   {
     "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 54,
+    "color_g": 49,
+    "color_r": 33,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "ed7c59b2-8c32-4eb9-a7ba-b2dfa1e1de32",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc4tg-zzoeh5jz.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc4tg-zzoeh5jz.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 60,
+    "color_g": 69,
+    "color_r": 78,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "eeaef157-efdd-4c9d-92d7-9c84fb475e62",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2pbmc-wvbpy6f3.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2pbmc-wvbpy6f3.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "George MacKay",
       "Dean-Charles Chapman",
       "Mark Strong",
@@ -5218,6 +6943,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2009"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 100,
+    "color_g": 106,
+    "color_r": 113,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "efbf017f-391c-429e-9003-d451974e7076",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p6go-dvwpgp0r.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p6go-dvwpgp0r.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
@@ -5296,6 +7045,33 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2025"
+  },
+  {
+    "actors": [
+      "Tom Cruise",
+      "Morgan Freeman",
+      "Olga Kurylenko",
+      "Andrea Riseborough"
+    ],
+    "added_at": "2026-10-03T01:45:08.148408+00:00",
+    "color_b": 52,
+    "color_g": 55,
+    "color_r": 52,
+    "director": "Joseph Kosinski",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "id": "f373d59c-ff58-4e37-b783-a000fba441ea",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/murqc6px-41z3ppv6.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc6px-41z3ppv6.jpg",
+    "movie_title": "Oblivion",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2013"
   },
   {
     "actors": [
@@ -5429,6 +7205,30 @@
   },
   {
     "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 71,
+    "color_g": 72,
+    "color_r": 72,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "fba2a51f-3b6a-49d4-bd55-dd693440e994",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p3z3-9tr9azja.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p3z3-9tr9azja.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
+  },
+  {
+    "actors": [
       "Brad Pitt",
       "Mélanie Laurent",
       "Christoph Waltz",
@@ -5530,6 +7330,30 @@
     "note": "",
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "year": "2025"
+  },
+  {
+    "actors": [
+      "Daniel Day-Lewis",
+      "Paul Dano",
+      "Kevin J. O'Connor",
+      "Ciarán Hinds"
+    ],
+    "added_at": "2026-10-04T17:06:51.754985+00:00",
+    "color_b": 16,
+    "color_g": 18,
+    "color_r": 20,
+    "director": "Paul Thomas Anderson",
+    "genre": [
+      "Drama"
+    ],
+    "id": "ff46a694-c9bb-4bc2-ad8c-10d6956a51eb",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/muu2p7vl-2isajzi5.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p7vl-2isajzi5.jpg",
+    "movie_title": "There Will Be Blood",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "year": "2007"
   },
   {
     "actors": [
