@@ -63,7 +63,7 @@ jobs:
           set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add backup films.html sitemap.xml
+          git add -A backup films films.html sitemap.xml
           # An unchanged collection shouldn't produce an empty weekly commit.
           if git diff --staged --quiet; then
             echo "No changes since the last backup."
