@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GATE — a running log of frames</title>
+<title>Framelog — a running log of frames</title>
 <meta name="description" content="A running log of frames worth freezing — pulled from movies, kept in one place.">
 <meta name="theme-color" content="#0e0f10">
 <link rel="canonical" href="https://inomovyaxyo6-byte.github.io/gate-project/">
 <!-- Without these a shared link is bare text; with them it unfurls into a card
      with a frame as the image, which is the whole appeal of the place. -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="GATE">
-<meta property="og:title" content="GATE — a running log of frames">
+<meta property="og:site_name" content="Framelog">
+<meta property="og:title" content="Framelog — a running log of frames">
 <meta property="og:description" content="A running log of frames worth freezing — pulled from movies, kept in one place.">
 <meta property="og:url" content="https://inomovyaxyo6-byte.github.io/gate-project/">
 <meta property="og:image" content="https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mtev2tos-g5xh3vdr.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="GATE — a running log of frames">
+<meta name="twitter:title" content="Framelog — a running log of frames">
 <meta name="twitter:description" content="A running log of frames worth freezing — pulled from movies, kept in one place.">
 <meta name="twitter:image" content="https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mtev2tos-g5xh3vdr.jpg">
 <link rel="manifest" href="manifest.json">
@@ -24,7 +24,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="GATE">
+<meta name="apple-mobile-web-app-title" content="Framelog">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
@@ -898,7 +898,7 @@
   <div class="sprockets" id="sprocketsTop"></div>
 
   <header>
-    <h1 class="brand display">GATE<span class="dot">.</span></h1>
+    <h1 class="brand display">Framelog<span class="dot">.</span></h1>
     <p class="tagline">A running log of frames worth freezing — pulled from movies, kept in one place.</p>
     <span class="count-badge mono" id="countBadge" style="display:none;"></span>
     <div class="mode-badge mono" id="modeBadge"></div>
@@ -1027,7 +1027,7 @@
   <div class="sprockets" id="sprocketsBottom"></div>
   <!-- The films.html link is partly for people and partly so a crawler can
        reach the plain-text listing by following a link, not only the sitemap. -->
-  <footer>GATE &mdash; a shared, public log. Anything logged here is visible to everyone with the link. <a href="films.html">All films</a></footer>
+  <footer>Framelog &mdash; a shared, public log. Anything logged here is visible to everyone with the link. <a href="films.html">All films</a></footer>
 
   <div class="movie-view" id="movieView">
     <div class="mv-backdrop" id="mvBackdrop"></div>
@@ -3337,7 +3337,7 @@
       return;
     }
     const payload = {
-      exportedFrom: 'GATE',
+      exportedFrom: 'Framelog',
       exportedAt: new Date().toISOString(),
       covers,
       frames: frames.map(f => ({
@@ -3371,11 +3371,11 @@
       const text = await file.text();
       payload = JSON.parse(text);
     } catch(err){
-      alert('That file could not be read as a GATE export (invalid JSON).');
+      alert('That file could not be read as a Framelog export (invalid JSON).');
       return;
     }
     if(!payload || !Array.isArray(payload.frames)){
-      alert('That file does not look like a GATE export.');
+      alert('That file does not look like a Framelog export.');
       return;
     }
     if(!confirm(`Import ${payload.frames.length} frame${payload.frames.length===1?'':'s'} into this collection? They'll be added alongside what's already here.`)) return;

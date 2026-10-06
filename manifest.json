@@ -1,6 +1,6 @@
 {
-  "name": "GATE — a running log of frames",
-  "short_name": "GATE",
+  "name": "Framelog — a running log of frames",
+  "short_name": "Framelog",
   "description": "A running log of frames worth freezing — pulled from movies, kept in one place.",
   "start_url": "./",
   "scope": "./",

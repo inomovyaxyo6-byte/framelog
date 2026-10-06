@@ -1,6 +1,6 @@
-# GATE
+# Framelog
 
-GATE is a personal running log of movie frames (screenshots/stills) — a searchable, filterable gallery organized by movie, in the spirit of FilmGrab or Shot Cafe.
+Framelog is a personal running log of movie frames (screenshots/stills) — a searchable, filterable gallery organized by movie, in the spirit of FilmGrab or Shot Cafe.
 
 Live site: https://inomovyaxyo6-byte.github.io/gate-project/
 

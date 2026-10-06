@@ -126,7 +126,7 @@ def head(title, description, canonical, image=""):
         '<meta name="description" content="' + e(description) + '">',
         '<link rel="canonical" href="' + e(canonical) + '">',
         '<meta property="og:type" content="website">',
-        '<meta property="og:site_name" content="GATE">',
+        '<meta property="og:site_name" content="Framelog">',
         '<meta property="og:title" content="' + e(title) + '">',
         '<meta property="og:description" content="' + e(description) + '">',
         '<meta property="og:url" content="' + e(canonical) + '">',
@@ -155,7 +155,7 @@ def build_film_page(m):
         alt_base += ", directed by " + m["director"]
 
     lines = [
-        head(label + " — frames | GATE", description,
+        head(label + " — frames | Framelog", description,
              SITE + "films/" + m["slug"] + ".html", m["cover_url"]),
         "    <h1>" + e(label) + "</h1>",
         '    <p class="meta">' + e(meta) + " · " + str(len(m["frames"])) + " frames</p>",
@@ -191,10 +191,10 @@ def build_film_page(m):
 
 def build_index(movies, total_frames):
     e = html.escape
-    description = ("Every film in the GATE collection — " + str(len(movies))
+    description = ("Every film in the Framelog collection — " + str(len(movies))
                    + " films, " + str(total_frames) + " frames from their cinematography.")
     lines = [
-        head("All films — GATE", description, SITE + "films.html"),
+        head("All films — Framelog", description, SITE + "films.html"),
         "    <h1>All films</h1>",
         '    <p class="lede">' + e(description) + "</p>",
         "    <ul>",

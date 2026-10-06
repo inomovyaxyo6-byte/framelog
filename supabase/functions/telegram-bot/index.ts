@@ -1,4 +1,4 @@
-// Telegram webhook receiver for the GATE channel.
+// Telegram webhook receiver for the Framelog channel.
 //
 // Telegram is deliberately restrictive about channel analytics, so this
 // records everything a bot admin is actually allowed to see:

@@ -2,7 +2,7 @@
 
 Records what a bot admin is allowed to see about the channel: reactions
 (who reacted, with what), joins/leaves, and posts. Data lands in the same
-Supabase project as the rest of GATE and is readable only by the owner account.
+Supabase project as the rest of Framelog and is readable only by the owner account.
 
 ## 1. Create the bot
 
