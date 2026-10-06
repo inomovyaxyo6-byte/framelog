@@ -907,6 +907,10 @@
     font-size:12px;
     letter-spacing:0.04em;
   }
+  footer a{ color:var(--amber); text-decoration:none; }
+  footer a:hover{ text-decoration:underline; }
+  .contact{ margin-top:10px; }
+  .contact .sep{ opacity:0.4; margin:0 6px; }
 </style>
 </head>
 <body>
@@ -1050,7 +1054,15 @@
   <div class="sprockets" id="sprocketsBottom"></div>
   <!-- The films.html link is partly for people and partly so a crawler can
        reach the plain-text listing by following a link, not only the sitemap. -->
-  <footer>Framestill &mdash; a shared, public log. Anything logged here is visible to everyone with the link. <a href="films.html">All films</a></footer>
+  <footer>
+    Framestill &mdash; a shared, public log. Anything logged here is visible to everyone with the link. <a href="films.html">All films</a>
+    <div class="contact">
+      Offers or questions?
+      <a href="https://t.me/matt_marcus" target="_blank" rel="noopener">Telegram</a>
+      <span class="sep">&middot;</span>
+      <a href="mailto:inomovyaxyo6@gmail.com">inomovyaxyo6@gmail.com</a>
+    </div>
+  </footer>
 
   <div class="movie-view" id="movieView">
     <div class="mv-backdrop" id="mvBackdrop"></div>

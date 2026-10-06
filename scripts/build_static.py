@@ -55,7 +55,22 @@ STYLE = """
     font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
   }
   .nav{ display:block; margin-top:40px; font-size:14px; }
+  .contact{
+    margin-top:36px; padding-top:20px; border-top:1px solid #22241f;
+    color:#8d8a84; font-size:13px;
+    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  }
+  .contact .sep{ opacity:0.4; margin:0 6px; }
 """
+
+# Someone arriving from a search lands on a film page, not the gallery, so the
+# way to get in touch has to be on every page rather than only the front one.
+CONTACT = (
+    '    <div class="contact">Offers or questions? '
+    '<a href="https://t.me/matt_marcus" target="_blank" rel="noopener">Telegram</a>'
+    '<span class="sep">&middot;</span>'
+    '<a href="mailto:inomovyaxyo6@gmail.com">inomovyaxyo6@gmail.com</a></div>'
+)
 
 
 def load(name):
@@ -181,6 +196,7 @@ def build_film_page(m):
     lines += [
         '    <a class="nav" href="' + e(deep_link) + '">Open in the gallery &rarr;</a>',
         '    <a class="nav" href="' + SITE + 'films.html">&larr; All films</a>',
+        CONTACT,
         "  </main>",
         "</body>",
         "</html>",
@@ -212,6 +228,7 @@ def build_index(movies, total_frames):
     lines += [
         "    </ul>",
         '    <a class="nav" href="' + SITE + '">&larr; Open the gallery</a>',
+        CONTACT,
         "  </main>",
         "</body>",
         "</html>",
