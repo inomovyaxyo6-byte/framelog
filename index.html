@@ -1011,6 +1011,11 @@
       <div class="color-status mono" id="colorStatus"></div>
       <button type="button" class="btn" id="colorModeClose">&times; Back to movies</button>
     </div>
+    <!-- Visible from the start, so the first paint says "loading" rather than
+         showing an empty page for the second the fetch takes. -->
+    <div id="loadingState" class="empty">
+      <div class="display">Loading the reel&hellip;</div>
+    </div>
     <div id="emptyState" class="empty" style="display:none;">
       <div class="display">No frames logged yet</div>
       <div>Paste a link above to start the reel.</div>
@@ -1189,6 +1194,10 @@
   const TMDB_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MmI3YTA3MjRhNWNkNWVlOGNiMWRmZjhjZWFhMWU3MiIsIm5iZiI6MTc4NzMwMDg1Ny40OTIsInN1YiI6IjZhODgwYmY5NmMyOWRiMWQ2Zjg4M2UwMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dARDOHna4s_R9_E3z7qVyAvzcTTXwX70MqN0-pm5pJg';
 
   let frames = [];
+  // Until the first fetch lands, an empty `frames` is "not loaded yet", not
+  // "nothing here" — rendering the empty state in between is what made the
+  // page flash "No frames logged yet" on every visit.
+  let framesLoaded = false;
   let lightboxIndex = -1;
   let currentFilters = { genre: 'all', director: 'all' };
   let currentSearch = '';
@@ -1227,6 +1236,7 @@
   }
 
   const emptyState = document.getElementById('emptyState');
+  const loadingState = document.getElementById('loadingState');
   const noMatch = document.getElementById('noMatch');
   const filterBar = document.getElementById('filterBar');
   const filterGenreSel = document.getElementById('filterGenre');
@@ -1334,6 +1344,15 @@
     grid.innerHTML = '';
     const groups = getMovieGroups();
     countBadge.textContent = `${frames.length} FRAME${frames.length===1?'':'S'} · ${groups.length} MOVIE${groups.length===1?'':'S'}`;
+
+    if(!framesLoaded){
+      loadingState.style.display = 'block';
+      emptyState.style.display = 'none';
+      noMatch.style.display = 'none';
+      grid.style.display = 'none';
+      return;
+    }
+    loadingState.style.display = 'none';
 
     if(!frames.length){
       emptyState.style.display = 'block';
@@ -1611,6 +1630,8 @@
     const { data, error } = await sb.from('frames').select('*').order('added_at', { ascending: true });
     frames = error ? [] : (data || []).map(rowToFrame);
     if(error) showFatal('Could not load frames: ' + error.message);
+    // Set even on failure: the loading message must not outlive the attempt.
+    framesLoaded = true;
 
     await loadCovers();
     await loadSoundtracks();
@@ -2409,6 +2430,7 @@
     colorBarEl.style.display = 'flex';
     colorGridEl.style.display = 'block';
     grid.style.display = 'none';
+    loadingState.style.display = 'none';
     emptyState.style.display = 'none';
     noMatch.style.display = 'none';
     filterBar.style.display = 'none';
@@ -2456,6 +2478,7 @@
     favoritesModeActive = true;
     favoritesGridEl.style.display = 'block';
     grid.style.display = 'none';
+    loadingState.style.display = 'none';
     emptyState.style.display = 'none';
     noMatch.style.display = 'none';
     filterBar.style.display = 'none';
