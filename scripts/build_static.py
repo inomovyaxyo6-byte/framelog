@@ -21,7 +21,7 @@ import re
 import unicodedata
 import urllib.parse
 
-SITE = "https://inomovyaxyo6-byte.github.io/gate-project/"
+SITE = "https://inomovyaxyo6-byte.github.io/framelog/"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STYLE = """

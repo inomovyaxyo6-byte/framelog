@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://inomovyaxyo6-byte.github.io/gate-project/sitemap.xml
+Sitemap: https://inomovyaxyo6-byte.github.io/framelog/sitemap.xml
