@@ -1,6 +1,6 @@
 {
-  "name": "Framelog — a running log of frames",
-  "short_name": "Framelog",
+  "name": "Framestill — a running log of frames",
+  "short_name": "Framestill",
   "description": "A running log of frames worth freezing — pulled from movies, kept in one place.",
   "start_url": "./",
   "scope": "./",
