@@ -601,12 +601,6 @@
   .card .title{ font-size:15.5px; line-height:1.3; margin:0 0 4px; }
   .card .title .year, .mv-title .year{ color:var(--text-dim); font-size:0.75em; font-weight:400; }
   .card .note{ font-size:13px; color:var(--text-dim); line-height:1.45; margin:0 0 8px; }
-  .card .logged{
-    font-size:10.5px;
-    color:var(--text-dim);
-    letter-spacing:0.06em;
-    opacity:0.75;
-  }
   .card .broken{
     aspect-ratio:16/10;
     display:flex; align-items:center; justify-content:center;
@@ -1247,14 +1241,6 @@
   const grid = document.getElementById('grid');
   const countBadge = document.getElementById('countBadge');
 
-  function formatLogged(ts){
-    const d = new Date(ts);
-    const mm = String(d.getMonth()+1).padStart(2,'0');
-    const dd = String(d.getDate()).padStart(2,'0');
-    const yy = String(d.getFullYear()).slice(-2);
-    return `LOGGED ${mm}.${dd}.${yy}`;
-  }
-
   function makeId(){
     return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10);
   }
@@ -1426,7 +1412,6 @@
           <p class="title">${escapeHtml(g.title)}${g.year ? ` <span class="year mono">(${escapeHtml(g.year)})</span>` : ''}</p>
           ${tagChips ? `<div class="tags">${tagChips}</div>` : ''}
           ${g.cover.note ? `<p class="note">${escapeHtml(g.cover.note)}</p>` : ''}
-          <div class="logged mono">${formatLogged(g.earliestAt)}</div>
         </div>
       `;
 
