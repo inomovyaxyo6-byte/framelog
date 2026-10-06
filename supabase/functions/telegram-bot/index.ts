@@ -27,7 +27,7 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 const BOT_TOKEN = Deno.env.get("TELEGRAM_BOT_TOKEN")!;
 const WEBHOOK_SECRET = Deno.env.get("TELEGRAM_WEBHOOK_SECRET") ?? "";
 const OWNER_CHAT_ID = Deno.env.get("TELEGRAM_OWNER_CHAT_ID") ?? "";
-const SITE_URL = "https://inomovyaxyo6-byte.github.io/framelog/";
+const SITE_URL = "https://framestill.com/";
 const TG_API = `https://api.telegram.org/bot${BOT_TOKEN}`;
 
 // The one account allowed to push frames from the site into Telegram.

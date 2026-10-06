@@ -2,7 +2,7 @@
 
 Framestill is a personal running log of movie frames (screenshots/stills) — a searchable, filterable gallery organized by movie, in the spirit of FilmGrab or Shot Cafe.
 
-Live site: https://inomovyaxyo6-byte.github.io/framelog/
+Live site: https://framestill.com/
 
 The site is a single file, [index.html](index.html) — markup, styles, and logic together, no build step. Data lives in Supabase (Postgres + Storage), so the collection is the same on every device rather than tied to one browser.
 
