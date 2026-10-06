@@ -1,0 +1,6 @@
+# Everything here is meant to be found — the gallery itself is drawn by
+# JavaScript, so films.html carries the same collection as plain text.
+User-agent: *
+Allow: /
+
+Sitemap: https://inomovyaxyo6-byte.github.io/gate-project/sitemap.xml

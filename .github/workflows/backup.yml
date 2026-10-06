@@ -50,12 +50,20 @@ jobs:
             echo "  $(jq 'length' < "backup/$table.json") rows"
           done
 
+      - name: Rebuild the crawlable pages
+        run: |
+          set -euo pipefail
+          # index.html's gallery is drawn by JavaScript, so a crawler's first
+          # look finds an empty container. These are regenerated from the fresh
+          # backup so the plain-text listing tracks the collection.
+          python3 scripts/build_static.py
+
       - name: Commit if anything changed
         run: |
           set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add backup
+          git add backup films.html sitemap.xml
           # An unchanged collection shouldn't produce an empty weekly commit.
           if git diff --staged --quiet; then
             echo "No changes since the last backup."
