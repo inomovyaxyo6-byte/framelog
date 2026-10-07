@@ -658,7 +658,10 @@
   .stats-maint .btn{ font-size:12px; }
   #backfillStatus{ margin-top:8px; font-size:11.5px; color:var(--text-dim); min-height:14px; }
   .lightbox-inner{
-    max-width:920px;
+    /* Capped near the stored resolution rather than at a fixed 920px: on a wide
+       screen the old limit left the frame occupying half the window, while
+       going past what is stored would only upscale it. */
+    max-width:min(1600px, 94vw);
     width:100%;
     max-height:100%;
     display:flex;
@@ -672,7 +675,8 @@
   .lightbox img{
     display:block;
     max-width:100%;
-    max-height:65vh;
+    /* Leaves room for the palette strip and caption underneath. */
+    max-height:76vh;
     border-radius:8px;
     box-shadow:0 30px 80px rgba(0,0,0,0.6);
   }
