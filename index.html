@@ -1022,7 +1022,14 @@
           <input type="text" id="year" placeholder="2000" inputmode="numeric" maxlength="4">
         </div>
       </div>
-      <p class="batch-hint" id="tmdbMsg">Same movie, director, genre and note are applied to every frame in this batch.</p>
+      <!-- The text lives in the attribute, not the body. It is a hint for the
+           upload form, which only the owner ever sees — but in the markup it
+           was one of the few static sentences on the page, so search engines
+           picked it up and pasted it into the result snippet, where it reads
+           as nonsense. Filling it from script keeps it out of the HTML and
+           makes the existing reset below actually work. -->
+      <p class="batch-hint" id="tmdbMsg"
+         data-default-text="Same movie, director, genre and note are applied to every frame in this batch."></p>
       <div class="form-row">
         <div class="field" style="flex:1">
           <label for="director">Director</label>
@@ -3972,6 +3979,12 @@
       });
     } catch(err){ /* ignore */ }
   }
+
+  // Hints that belong to the upload form are filled in here rather than sitting
+  // in the markup, where they end up in search results instead of the page.
+  document.querySelectorAll('[data-default-text]').forEach(el => {
+    el.textContent = el.dataset.defaultText;
+  });
 
   updateAuthUI();
   loadFrames();
