@@ -1482,8 +1482,11 @@
     render();
   });
 
-  // ---------- auth (Supabase email/password — sign-up is disabled in the project,
-  // so any signed-in session belongs to the owner) ----------
+  // ---------- auth (Supabase email/password) ----------
+  // Sign-up is open, so a signed-in session is an ordinary visitor who can
+  // collect favourites. Owner rights need two further things: the user id has
+  // to match OWNER_USER_ID, and the session has to have cleared the second
+  // factor. The database enforces the same pair, so neither can be faked here.
   const authMsg = document.getElementById('authMsg');
   const modeBadge = document.getElementById('modeBadge');
   const signInToggle = document.getElementById('signInToggle');
