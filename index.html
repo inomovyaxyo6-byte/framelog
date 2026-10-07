@@ -166,6 +166,12 @@
   /* Supabase returns the enrolment code as an SVG, so it just needs sizing. */
   .mfa-qr svg, .mfa-qr img{ width:100%; height:auto; background:#fff; border-radius:6px; display:block; }
   .mfa-hint{ font-size:11px; color:var(--text-dim); line-height:1.4; }
+  .mfa-secret{
+    margin-top:8px; padding:7px 9px;
+    background:#0f1011; border:1px solid var(--border-strong); border-radius:6px;
+    font-family:'JetBrains Mono', monospace; font-size:11px;
+    color:var(--text); word-break:break-all; user-select:all; text-align:center;
+  }
   .sign-in-form input{
     background:#0f1011;
     border:1px solid var(--border-strong);
@@ -946,7 +952,7 @@
       <!-- One-time enrolment: scan the code, then confirm with the app. -->
       <form id="mfaEnrollForm" class="sign-in-form" style="display:none;">
         <div id="mfaQr" class="mfa-qr"></div>
-        <div class="mfa-hint">Scan with an authenticator app, then enter the code it shows.</div>
+        <div class="mfa-hint">Scan with an authenticator app &mdash; or type the key below into it by hand &mdash; then enter the 6-digit code it shows. Keep that key somewhere safe: it is what gets you back in if you lose the phone.</div>
         <input type="text" id="mfaEnrollCode" inputmode="numeric" autocomplete="one-time-code"
                maxlength="6" placeholder="6-digit code" required>
         <button type="submit" class="btn primary">Confirm</button>
@@ -1647,11 +1653,24 @@
     }
     enrollingFactorId = data.id;
     mfaQr.innerHTML = '';
-    // qr_code comes back as SVG markup; fall back to the secret if it's absent.
-    if(data.totp && data.totp.qr_code){
-      mfaQr.innerHTML = data.totp.qr_code;
-    } else if(data.totp && data.totp.secret){
-      mfaQr.textContent = data.totp.secret;
+
+    const totp = data.totp || {};
+    // qr_code arrives as a data: URL, not as markup. Dropping it into innerHTML
+    // printed the "data:image/svg+xml" prefix as text and left the rest to be
+    // parsed as a stray element, which is why the code came out unscannable.
+    if(totp.qr_code){
+      const img = document.createElement('img');
+      img.alt = 'Authenticator QR code';
+      img.src = totp.qr_code;
+      mfaQr.appendChild(img);
+    }
+    // Shown regardless: scanning fails often enough that the key needs to be
+    // typeable, and it doubles as the backup worth keeping somewhere safe.
+    if(totp.secret){
+      const key = document.createElement('div');
+      key.className = 'mfa-secret';
+      key.textContent = totp.secret;
+      mfaQr.appendChild(key);
     }
     authMsg.textContent = '';
     mfaSetupBtn.style.display = 'none';
