@@ -654,6 +654,9 @@
   .stats-row{ display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border); font-size:13px; }
   .stats-row .num{ color:var(--amber); }
   .stats-section-title{ margin:18px 0 6px; color:var(--text-dim); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; }
+  .stats-maint{ margin-top:22px; padding-top:16px; border-top:1px solid var(--border); }
+  .stats-maint .btn{ font-size:12px; }
+  #backfillStatus{ margin-top:8px; font-size:11.5px; color:var(--text-dim); min-height:14px; }
   .lightbox-inner{
     max-width:920px;
     width:100%;
@@ -1197,6 +1200,13 @@
       <button class="lb-btn" id="statsClose" aria-label="Close">&times;</button>
       <h3 class="stats-title">Site stats</h3>
       <div id="statsBody" class="mono">Loading&hellip;</div>
+
+      <!-- Maintenance, kept behind the owner-only panel: a one-time pass to
+           give older frames the small copy that grids now prefer. -->
+      <div class="stats-maint">
+        <button type="button" class="btn" id="backfillThumbsBtn">Build missing thumbnails</button>
+        <div class="mono" id="backfillStatus"></div>
+      </div>
     </div>
   </div>
 
@@ -3637,6 +3647,77 @@
   });
   document.getElementById('statsClose').addEventListener('click', () => statsModal.classList.remove('open'));
   statsModal.addEventListener('click', (e) => { if(e.target === statsModal) statsModal.classList.remove('open'); });
+
+  // ---------- one-time pass: thumbnails for frames stored before they existed ----------
+  // Grids prefer the small copy, but frames logged earlier have none and fall
+  // back to the full file. This fetches each one, shrinks it in the browser and
+  // stores the result, so the speed-up applies to the whole collection rather
+  // than only to what gets added from now on.
+  //
+  // Safe to stop and re-run: frames that already have a thumbnail are skipped,
+  // so a second run picks up only what the first one missed.
+  const backfillThumbsBtn = document.getElementById('backfillThumbsBtn');
+  const backfillStatus = document.getElementById('backfillStatus');
+
+  backfillThumbsBtn.addEventListener('click', async () => {
+    if(!isOwner) return;
+
+    // Only frames whose file is ours to begin with — a linked image lives on
+    // someone else's host and isn't ours to copy.
+    const todo = frames.filter(f => f.imageType === 'upload' && f.imagePath && !f.thumbUrl);
+    if(!todo.length){
+      backfillStatus.textContent = 'Every frame already has one.';
+      return;
+    }
+
+    backfillThumbsBtn.disabled = true;
+    let done = 0, failed = 0;
+    backfillStatus.textContent = `0 / ${todo.length}…`;
+
+    const CONCURRENCY = 3;
+    let cursor = 0;
+    async function worker(){
+      while(cursor < todo.length){
+        const f = todo[cursor++];
+        try{
+          const img = await loadImageEl(frameImgSrc(f));
+          const thumb = await renderToJpeg(img, THUMB_DIMENSION, THUMB_QUALITY);
+          const thumbPath = f.imagePath.replace(/\.jpg$/i, '') + '-t.jpg';
+
+          // upsert, so a half-finished earlier run doesn't block this one
+          const { error: upErr } = await sb.storage.from('frame-images')
+            .upload(thumbPath, thumb.blob, { contentType: 'image/jpeg', upsert: true });
+          if(upErr) throw upErr;
+
+          const thumbUrl = sb.storage.from('frame-images').getPublicUrl(thumbPath).data.publicUrl;
+          const { error: dbErr } = await sb.from('frames').update({
+            thumb_url: thumbUrl,
+            thumb_path: thumbPath,
+            width: img.naturalWidth || null,
+            height: img.naturalHeight || null
+          }).eq('id', f.id);
+          if(dbErr) throw dbErr;
+
+          f.thumbUrl = thumbUrl;
+          f.thumbPath = thumbPath;
+          f.width = img.naturalWidth || null;
+          f.height = img.naturalHeight || null;
+        } catch(err){
+          failed++;
+        }
+        done++;
+        backfillStatus.textContent = `${done} / ${todo.length}…` + (failed ? ` (${failed} failed)` : '');
+      }
+    }
+
+    await Promise.all(Array.from({ length: Math.min(CONCURRENCY, todo.length) }, worker));
+
+    backfillStatus.textContent = failed
+      ? `Done — ${todo.length - failed} built, ${failed} failed. Run again to retry those.`
+      : `Done — ${todo.length} built.`;
+    backfillThumbsBtn.disabled = false;
+    render();
+  });
 
   // ---------- export / import (JSON backup) ----------
   document.getElementById('exportBtn').addEventListener('click', async () => {
