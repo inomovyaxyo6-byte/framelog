@@ -1289,8 +1289,28 @@
   const filterDirectorSel = document.getElementById('filterDirector');
   const clearFiltersBtn = document.getElementById('clearFilters');
 
+  // The full frame — for the lightbox and for sending to Telegram.
   function frameImgSrc(f){
     return f.imageUrl || '';
+  }
+
+  // What every grid loads. Frames added before thumbnails existed have none,
+  // so they fall back to the full image and behave exactly as they did before.
+  function frameThumbSrc(f){
+    return f.thumbUrl || f.imageUrl || '';
+  }
+
+  // A frame's own average colour, used as the placeholder behind it while it
+  // loads — the grid shows the right hue instead of a grey hole.
+  function framePlaceholder(f){
+    if(!f.color) return '';
+    return `background-color:rgb(${f.color.r},${f.color.g},${f.color.b});`;
+  }
+
+  // Reserving the right height stops the grid reflowing as images arrive.
+  // Only known for frames stored with their dimensions.
+  function frameRatio(f){
+    return (f.width && f.height) ? `aspect-ratio:${f.width}/${f.height};` : '';
   }
 
   function movieKey(title){
@@ -1436,7 +1456,8 @@
       card.innerHTML = `
         <span class="frame-no mono">${shotLabel}</span>
         <button class="remove-btn" aria-label="Remove this movie" data-key="${escapeHtml(g.key)}">&times;</button>
-        <img src="${escapeHtml(frameImgSrc(g.cover))}" alt="${escapeHtml(g.title)}" loading="lazy"
+        <img src="${escapeHtml(frameThumbSrc(g.cover))}" alt="${escapeHtml(g.title)}" loading="lazy"
+             style="${framePlaceholder(g.cover)}${frameRatio(g.cover)}"
              onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=&quot;broken&quot;>Frame unavailable</div>');">
         <div class="meta">
           <p class="title">${escapeHtml(g.title)}${g.year ? ` <span class="year mono">(${escapeHtml(g.year)})</span>` : ''}</p>
@@ -1782,6 +1803,10 @@
       imageType: row.image_type,
       imageUrl: row.image_url,
       imagePath: row.image_path || null,
+      thumbUrl: row.thumb_url || null,
+      thumbPath: row.thumb_path || null,
+      width: row.width || null,
+      height: row.height || null,
       // Sampled once and kept, so browsing by colour doesn't re-download the
       // whole collection. Null on rows added before this existed.
       color: (row.color_r === null || row.color_r === undefined)
@@ -1872,7 +1897,11 @@
     frames = frames.filter(f => f.id !== id);
     await sb.from('frames').delete().eq('id', id);
     if(target.imageType === 'upload' && target.imagePath){
-      await sb.storage.from('frame-images').remove([target.imagePath]);
+      // Both copies go, or thumbnails pile up in storage with nothing
+      // referencing them and no way to tell which frame they belonged to.
+      const paths = [target.imagePath];
+      if(target.thumbPath) paths.push(target.thumbPath);
+      await sb.storage.from('frame-images').remove(paths);
     }
   }
 
@@ -2001,6 +2030,10 @@
 
   const MAX_DIMENSION = 1600;
   const JPEG_QUALITY = 0.85;
+  // Grids never show a frame larger than a card, so they have no use for the
+  // full file. A small copy is what they load instead.
+  const THUMB_DIMENSION = 520;
+  const THUMB_QUALITY = 0.72;
   const MAX_STORED_BYTES = 8 * 1024 * 1024; // keep uploads reasonably small
 
   function readFileAsDataUrl(file){
@@ -2027,13 +2060,11 @@
     return Math.floor(base64.length * 0.75);
   }
 
-  async function compressImageFile(file){
-    const rawDataUrl = await readFileAsDataUrl(file);
-    const img = await loadImage(rawDataUrl);
-
+  // Draws the image at most maxDim across and hands back the encoded result.
+  function renderToJpeg(img, maxDim, quality){
     let { width, height } = img;
-    if(width > MAX_DIMENSION || height > MAX_DIMENSION){
-      const scale = MAX_DIMENSION / Math.max(width, height);
+    if(width > maxDim || height > maxDim){
+      const scale = maxDim / Math.max(width, height);
       width = Math.round(width * scale);
       height = Math.round(height * scale);
     }
@@ -2046,9 +2077,30 @@
     ctx.fillRect(0, 0, width, height);
     ctx.drawImage(img, 0, 0, width, height);
 
-    const dataUrl = canvas.toDataURL('image/jpeg', JPEG_QUALITY);
-    const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg', JPEG_QUALITY));
-    return { dataUrl, blob, width, height, sizeBytes: blob ? blob.size : estimateBytes(dataUrl) };
+    return new Promise(resolve => {
+      canvas.toBlob(
+        blob => resolve({ blob, width, height, dataUrl: canvas.toDataURL('image/jpeg', quality) }),
+        'image/jpeg', quality
+      );
+    });
+  }
+
+  async function compressImageFile(file){
+    const rawDataUrl = await readFileAsDataUrl(file);
+    const img = await loadImage(rawDataUrl);
+
+    // Two passes over the same decoded image: one to keep, one for the grids.
+    const full = await renderToJpeg(img, MAX_DIMENSION, JPEG_QUALITY);
+    const thumb = await renderToJpeg(img, THUMB_DIMENSION, THUMB_QUALITY);
+
+    return {
+      dataUrl: full.dataUrl,
+      blob: full.blob,
+      thumbBlob: thumb.blob,
+      width: full.width,
+      height: full.height,
+      sizeBytes: full.blob ? full.blob.size : estimateBytes(full.dataUrl)
+    };
   }
 
   // pendingUploads: array of { tempId, name, status: 'processing'|'ready'|'error', dataUrl, sizeBytes, errorMsg }
@@ -2100,6 +2152,9 @@
         entry.status = 'ready';
         entry.dataUrl = result.dataUrl;
         entry.blob = result.blob;
+        entry.thumbBlob = result.thumbBlob;
+        entry.width = result.width;
+        entry.height = result.height;
         entry.sizeBytes = result.sizeBytes;
       }
       renderUploadGrid();
@@ -2231,17 +2286,36 @@
         async function worker(){
           while(cursor < ready.length){
             const u = ready[cursor++];
-            const path = `${session.user.id}/${makeId()}.jpg`;
+            const baseId = makeId();
+            const path = `${session.user.id}/${baseId}.jpg`;
             const { error: uploadError } = await sb.storage.from('frame-images')
               .upload(path, u.blob, { contentType: 'image/jpeg' });
             if(!uploadError){
               const { data: pub } = sb.storage.from('frame-images').getPublicUrl(path);
+
+              // The thumbnail is what every grid loads. If it fails to upload
+              // the frame is still perfectly usable — the page falls back to
+              // the full image — so a failure here must not lose the frame.
+              let thumbPath = null, thumbUrl = null;
+              if(u.thumbBlob){
+                thumbPath = `${session.user.id}/${baseId}-t.jpg`;
+                const { error: thumbError } = await sb.storage.from('frame-images')
+                  .upload(thumbPath, u.thumbBlob, { contentType: 'image/jpeg' });
+                if(thumbError){
+                  thumbPath = null;
+                } else {
+                  thumbUrl = sb.storage.from('frame-images').getPublicUrl(thumbPath).data.publicUrl;
+                }
+              }
+
               // Sample the colour from the copy already in memory — free here,
               // and it spares colour browsing from ever downloading this frame.
               const avg = await getAverageColor(u.dataUrl);
               rowsToInsert.push({
                 owner_id: session.user.id, movie_title: movieTitle, year, director, genre, actors, note,
                 image_type: 'upload', image_url: pub.publicUrl, image_path: path,
+                thumb_url: thumbUrl, thumb_path: thumbPath,
+                width: u.width || null, height: u.height || null,
                 color_r: avg ? Math.round(avg.r) : null,
                 color_g: avg ? Math.round(avg.g) : null,
                 color_b: avg ? Math.round(avg.b) : null
@@ -2508,7 +2582,7 @@
   async function frameRawColor(f){
     if(f.color) return f.color;
 
-    const raw = await getAverageColor(frameImgSrc(f));
+    const raw = await getAverageColor(frameThumbSrc(f));
     if(!raw) return null;
 
     const rounded = { r: Math.round(raw.r), g: Math.round(raw.g), b: Math.round(raw.b) };
@@ -2624,7 +2698,7 @@
       const thumb = document.createElement('div');
       thumb.className = 'color-thumb';
       thumb.innerHTML = `
-        <img src="${escapeHtml(frameImgSrc(f))}" alt="${escapeHtml(f.movieTitle)}" loading="lazy">
+        <img src="${escapeHtml(frameThumbSrc(f))}" alt="${escapeHtml(f.movieTitle)}" loading="lazy" style="${framePlaceholder(f)}">
         <div class="color-thumb-title mono">${escapeHtml(f.movieTitle)}</div>
       `;
       thumb.addEventListener('click', () => {
@@ -2672,7 +2746,7 @@
       const thumb = document.createElement('div');
       thumb.className = 'color-thumb';
       thumb.innerHTML = `
-        <img src="${escapeHtml(frameImgSrc(f))}" alt="${escapeHtml(f.movieTitle)}" loading="lazy">
+        <img src="${escapeHtml(frameThumbSrc(f))}" alt="${escapeHtml(f.movieTitle)}" loading="lazy" style="${framePlaceholder(f)}">
         <div class="color-thumb-title mono">${escapeHtml(f.movieTitle)}</div>
       `;
       thumb.addEventListener('click', () => {
@@ -2750,7 +2824,7 @@
     updateUrlForState();
 
     mvBackdrop.classList.remove('show');
-    const coverSrc = frameImgSrc(g.cover);
+    const coverSrc = frameThumbSrc(g.cover);
     if(coverSrc){
       const bgImg = new Image();
       bgImg.onload = () => {
@@ -2792,7 +2866,8 @@
       thumb.innerHTML = `
         ${isCover ? '<span class="mv-cover-badge">&#9733;</span>' : ''}
         ${selectMode ? `<div class="mv-thumb-check">${isSelected ? '&#10003;' : ''}</div>` : '<button class="mv-thumb-remove" aria-label="Remove this still">&times;</button>'}
-        <img src="${escapeHtml(frameImgSrc(f))}" alt="${escapeHtml(g.title)}" loading="lazy"
+        <img src="${escapeHtml(frameThumbSrc(f))}" alt="${escapeHtml(g.title)}" loading="lazy"
+             style="${framePlaceholder(f)}${frameRatio(f)}"
              onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=&quot;broken&quot;>Frame unavailable</div>');">
       `;
       thumb.addEventListener('click', (e) => {
@@ -3414,7 +3489,7 @@
     const requestedFor = f.id;
     let colors = paletteCache[f.id];
     if(colors === undefined){
-      colors = await getPaletteStrip(frameImgSrc(f), bands);
+      colors = await getPaletteStrip(frameThumbSrc(f), bands);
       paletteCache[f.id] = colors;
     }
     // Guard against the user having already flipped to another frame while we awaited
