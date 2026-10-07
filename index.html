@@ -163,6 +163,9 @@
   }
   .sign-in-form .btn{ width:100%; justify-content:center; }
   .sign-in-form .auth-link{ align-self:center; padding-top:2px; }
+  /* Supabase returns the enrolment code as an SVG, so it just needs sizing. */
+  .mfa-qr svg, .mfa-qr img{ width:100%; height:auto; background:#fff; border-radius:6px; display:block; }
+  .mfa-hint{ font-size:11px; color:var(--text-dim); line-height:1.4; }
   .sign-in-form input{
     background:#0f1011;
     border:1px solid var(--border-strong);
@@ -929,6 +932,27 @@
         <button type="button" class="btn" id="signInCancel">Cancel</button>
         <button type="button" class="auth-link" id="authModeToggle">Need an account? Sign up</button>
       </form>
+
+      <!-- Second step of signing in, once a factor is enrolled. -->
+      <form id="mfaForm" class="sign-in-form" style="display:none;">
+        <input type="text" id="mfaCode" inputmode="numeric" autocomplete="one-time-code"
+               maxlength="6" placeholder="6-digit code" required>
+        <button type="submit" class="btn primary">Verify</button>
+        <button type="button" class="btn" id="mfaCancel">Cancel</button>
+      </form>
+
+      <button type="button" class="auth-link" id="mfaSetupBtn" style="display:none;">Enable 2FA</button>
+
+      <!-- One-time enrolment: scan the code, then confirm with the app. -->
+      <form id="mfaEnrollForm" class="sign-in-form" style="display:none;">
+        <div id="mfaQr" class="mfa-qr"></div>
+        <div class="mfa-hint">Scan with an authenticator app, then enter the code it shows.</div>
+        <input type="text" id="mfaEnrollCode" inputmode="numeric" autocomplete="one-time-code"
+               maxlength="6" placeholder="6-digit code" required>
+        <button type="submit" class="btn primary">Confirm</button>
+        <button type="button" class="btn" id="mfaEnrollCancel">Cancel</button>
+      </form>
+
       <div class="auth-msg mono" id="authMsg"></div>
     </div>
   </header>
@@ -1543,9 +1567,159 @@
     await sb.auth.signOut();
   });
 
-  sb.auth.onAuthStateChange((_event, newSession) => {
+  // ---------- two-factor authentication ----------
+  // A password alone used to be full control of the archive. With a factor
+  // enrolled, owner rights are withheld until the session reaches aal2 —
+  // Supabase's term for "the second factor has been presented".
+  //
+  // This check is only the interface's half. The database policies enforce the
+  // same requirement, so a stolen password can't skip it by calling the API
+  // directly, which is what makes it real protection rather than a formality.
+  const mfaForm = document.getElementById('mfaForm');
+  const mfaCode = document.getElementById('mfaCode');
+  const mfaCancel = document.getElementById('mfaCancel');
+  const mfaSetupBtn = document.getElementById('mfaSetupBtn');
+  const mfaEnrollForm = document.getElementById('mfaEnrollForm');
+  const mfaEnrollCode = document.getElementById('mfaEnrollCode');
+  const mfaEnrollCancel = document.getElementById('mfaEnrollCancel');
+  const mfaQr = document.getElementById('mfaQr');
+  let enrollingFactorId = null;
+
+  async function assuranceLevel(){
+    try{
+      const { data } = await sb.auth.mfa.getAuthenticatorAssuranceLevel();
+      return data || {};
+    } catch(err){ return {}; }
+  }
+
+  async function firstTotpFactor(){
+    try{
+      const { data } = await sb.auth.mfa.listFactors();
+      return (data && data.totp && data.totp[0]) || null;
+    } catch(err){ return null; }
+  }
+
+  // Runs the challenge/verify pair that both signing in and enrolling need.
+  async function verifyCode(factorId, code){
+    const { data: ch, error: chErr } = await sb.auth.mfa.challenge({ factorId });
+    if(chErr) return chErr;
+    const { error } = await sb.auth.mfa.verify({
+      factorId, challengeId: ch.id, code: code.trim()
+    });
+    return error || null;
+  }
+
+  mfaForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const factor = await firstTotpFactor();
+    if(!factor){ authMsg.textContent = 'No authenticator is set up.'; return; }
+    authMsg.classList.remove('error');
+    authMsg.textContent = 'Checking code…';
+    const err = await verifyCode(factor.id, mfaCode.value);
+    if(err){
+      authMsg.classList.add('error');
+      authMsg.textContent = err.message;
+      return;
+    }
+    mfaForm.reset();
+    mfaForm.style.display = 'none';
+    authMsg.textContent = '';
+    await refreshOwnerState();
+    updateAuthUI();
+    render();
+  });
+
+  mfaCancel.addEventListener('click', async () => {
+    mfaForm.reset();
+    mfaForm.style.display = 'none';
+    authMsg.textContent = '';
+    await sb.auth.signOut(); // half-signed-in is a confusing state to leave behind
+  });
+
+  mfaSetupBtn.addEventListener('click', async () => {
+    authMsg.classList.remove('error');
+    authMsg.textContent = 'Preparing…';
+    const { data, error } = await sb.auth.mfa.enroll({ factorType: 'totp' });
+    if(error){
+      authMsg.classList.add('error');
+      authMsg.textContent = error.message;
+      return;
+    }
+    enrollingFactorId = data.id;
+    mfaQr.innerHTML = '';
+    // qr_code comes back as SVG markup; fall back to the secret if it's absent.
+    if(data.totp && data.totp.qr_code){
+      mfaQr.innerHTML = data.totp.qr_code;
+    } else if(data.totp && data.totp.secret){
+      mfaQr.textContent = data.totp.secret;
+    }
+    authMsg.textContent = '';
+    mfaSetupBtn.style.display = 'none';
+    mfaEnrollForm.style.display = 'flex';
+  });
+
+  mfaEnrollForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if(!enrollingFactorId) return;
+    authMsg.classList.remove('error');
+    authMsg.textContent = 'Confirming…';
+    const err = await verifyCode(enrollingFactorId, mfaEnrollCode.value);
+    if(err){
+      authMsg.classList.add('error');
+      authMsg.textContent = err.message;
+      return;
+    }
+    enrollingFactorId = null;
+    mfaEnrollForm.reset();
+    mfaEnrollForm.style.display = 'none';
+    mfaQr.innerHTML = '';
+    authMsg.textContent = 'Two-factor authentication is on.';
+    await refreshOwnerState();
+    updateAuthUI();
+  });
+
+  mfaEnrollCancel.addEventListener('click', async () => {
+    // Drop the half-finished factor, or it lingers unverified on the account.
+    if(enrollingFactorId){
+      try{ await sb.auth.mfa.unenroll({ factorId: enrollingFactorId }); } catch(err){ /* best effort */ }
+      enrollingFactorId = null;
+    }
+    mfaEnrollForm.reset();
+    mfaEnrollForm.style.display = 'none';
+    mfaQr.innerHTML = '';
+    authMsg.textContent = '';
+    updateAuthUI();
+  });
+
+  async function refreshOwnerState(){
+    if(!session || session.user.id !== OWNER_USER_ID){
+      isOwner = false;
+      return;
+    }
+    const aal = await assuranceLevel();
+    // nextLevel is 'aal2' only once a factor exists. Before that there is
+    // nothing to present, so aal1 is the ceiling and still counts as owner.
+    isOwner = aal.nextLevel !== 'aal2' || aal.currentLevel === 'aal2';
+
+    const needsCode = aal.nextLevel === 'aal2' && aal.currentLevel === 'aal1';
+    mfaForm.style.display = needsCode ? 'flex' : 'none';
+    if(needsCode) signInForm.style.display = 'none';
+
+    // Offer enrolment only to a fully authenticated owner who has no factor.
+    const noFactor = aal.nextLevel !== 'aal2';
+    mfaSetupBtn.style.display =
+      (noFactor && mfaEnrollForm.style.display !== 'flex') ? 'inline-block' : 'none';
+  }
+
+  sb.auth.onAuthStateChange(async (_event, newSession) => {
     session = newSession;
-    isOwner = !!(session && session.user.id === OWNER_USER_ID);
+    isOwner = false;
+    if(!session){
+      mfaForm.style.display = 'none';
+      mfaSetupBtn.style.display = 'none';
+      mfaEnrollForm.style.display = 'none';
+    }
+    await refreshOwnerState();
     updateAuthUI();
     loadFavorites();
     render();
