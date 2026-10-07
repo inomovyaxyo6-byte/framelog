@@ -2038,8 +2038,12 @@
   tabUrl.addEventListener('click', () => setSrcTab('url'));
   tabUpload.addEventListener('click', () => setSrcTab('upload'));
 
-  const MAX_DIMENSION = 1600;
-  const JPEG_QUALITY = 0.85;
+  // 1920 is native 1080p, so the common screenshot is no longer downscaled at
+  // all. Raising this used to cost browsing speed, because grids loaded these
+  // same files; now they load thumbnails, so the weight lands only on the frame
+  // someone actually opened.
+  const MAX_DIMENSION = 1920;
+  const JPEG_QUALITY = 0.92;
   // Grids never show a frame larger than a card, so they have no use for the
   // full file. A small copy is what they load instead.
   const THUMB_DIMENSION = 520;
