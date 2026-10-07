@@ -692,8 +692,27 @@
     text-align:center;
     margin-top:18px;
     max-width:640px;
+    display:none; /* revealed by the ⓘ button, never on its own */
   }
-  .lightbox-meta .note{ color:var(--text-dim); font-size:14px; }
+  .lightbox-meta.open{ display:block; }
+  .lightbox-meta .note{ color:var(--text-dim); font-size:14px; line-height:1.5; }
+  .lb-note-form{ display:flex; flex-direction:column; gap:8px; margin-top:10px; }
+  .lb-note-form textarea{
+    background:#0f1011;
+    border:1px solid var(--border-strong);
+    color:var(--text);
+    padding:9px 11px;
+    border-radius:7px;
+    font-family:inherit;
+    font-size:14px;
+    line-height:1.5;
+    resize:vertical;
+    width:100%;
+  }
+  .lb-note-form textarea:focus{ border-color:var(--amber); outline:none; }
+  .lb-note-actions{ display:flex; gap:8px; justify-content:center; }
+  .lb-note-actions .btn{ font-size:12px; padding:6px 14px; }
+  #lbNoteEdit{ margin-top:6px; }
   .lb-controls{
     position:absolute;
     top:24px; right:24px;
@@ -1218,6 +1237,8 @@
     <div class="lb-controls">
       <span class="lb-counter mono" id="lbCounter"></span>
       <button class="lb-btn" id="lbFavorite" style="display:none;" aria-label="Like this still" title="Like this still">&#9825;</button>
+      <!-- Hidden unless there is something to show, so it never sits there dead. -->
+      <button class="lb-btn" id="lbNoteToggle" style="display:none;" aria-label="About this frame" title="About this frame">&#9432;</button>
       <button class="lb-btn" id="lbSetCover" aria-label="Set as cover photo" title="Set as cover photo">&#9733;</button>
       <button class="lb-btn" id="lbRemoveStill" aria-label="Remove this still" title="Remove this still">&#128465;</button>
       <button class="lb-btn" id="lbClose" aria-label="Close">&times;</button>
@@ -1229,8 +1250,18 @@
         <img id="lbImg" src="" alt="">
         <div class="lb-palette" id="lbPalette"></div>
       </div>
-      <div class="lightbox-meta">
+      <!-- Collapsed by default: opening a frame should show the frame, not
+           text around it. The note is a step away, not in the way. -->
+      <div class="lightbox-meta" id="lbNotePanel">
         <div class="note" id="lbNote"></div>
+        <button type="button" class="auth-link" id="lbNoteEdit" style="display:none;">Edit note</button>
+        <form class="lb-note-form" id="lbNoteForm" style="display:none;">
+          <textarea id="lbNoteInput" rows="2" placeholder="Why this frame stood out"></textarea>
+          <div class="lb-note-actions">
+            <button type="submit" class="btn primary">Save</button>
+            <button type="button" class="btn" id="lbNoteCancel">Cancel</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -1476,7 +1507,6 @@
         <div class="meta">
           <p class="title">${escapeHtml(g.title)}${g.year ? ` <span class="year mono">(${escapeHtml(g.year)})</span>` : ''}</p>
           ${tagChips ? `<div class="tags">${tagChips}</div>` : ''}
-          ${g.cover.note ? `<p class="note">${escapeHtml(g.cover.note)}</p>` : ''}
         </div>
       `;
 
@@ -3481,7 +3511,68 @@
   const lightbox = document.getElementById('lightbox');
   const lbImg = document.getElementById('lbImg');
   const lbNote = document.getElementById('lbNote');
+  const lbNotePanel = document.getElementById('lbNotePanel');
+  const lbNoteToggle = document.getElementById('lbNoteToggle');
+  const lbNoteEdit = document.getElementById('lbNoteEdit');
+  const lbNoteForm = document.getElementById('lbNoteForm');
+  const lbNoteInput = document.getElementById('lbNoteInput');
+  const lbNoteCancel = document.getElementById('lbNoteCancel');
   const lbPalette = document.getElementById('lbPalette');
+
+  // The note is shown on request, never unprompted: a frame should open as a
+  // frame. The ⓘ button appears only when there is a note to read, or when the
+  // owner is signed in and could write one.
+  function renderNotePanel(f){
+    lbNote.textContent = f.note || '';
+    lbNote.style.display = f.note ? 'block' : 'none';
+
+    lbNoteEdit.style.display = isOwner ? 'inline-block' : 'none';
+    lbNoteEdit.textContent = f.note ? 'Edit note' : 'Add a note';
+    lbNoteForm.style.display = 'none';
+    lbNoteInput.value = f.note || '';
+
+    lbNoteToggle.style.display = (f.note || isOwner) ? 'flex' : 'none';
+    lbNoteToggle.classList.toggle('active', false);
+    lbNotePanel.classList.remove('open'); // collapsed again on every frame
+  }
+
+  lbNoteToggle.addEventListener('click', () => {
+    const open = lbNotePanel.classList.toggle('open');
+    lbNoteToggle.classList.toggle('active', open);
+  });
+
+  lbNoteEdit.addEventListener('click', () => {
+    lbNoteForm.style.display = 'flex';
+    lbNoteEdit.style.display = 'none';
+    lbNoteInput.focus();
+  });
+
+  lbNoteCancel.addEventListener('click', () => {
+    const f = currentGroupFrames[lightboxIndex];
+    lbNoteForm.style.display = 'none';
+    lbNoteEdit.style.display = isOwner ? 'inline-block' : 'none';
+    if(f) lbNoteInput.value = f.note || '';
+  });
+
+  lbNoteForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if(!isOwner) return;
+    const f = currentGroupFrames[lightboxIndex];
+    if(!f) return;
+
+    const text = lbNoteInput.value.trim();
+    const { error } = await sb.from('frames').update({ note: text || null }).eq('id', f.id);
+    if(error){
+      alert('Could not save the note: ' + error.message);
+      return;
+    }
+
+    f.note = text;
+    renderNotePanel(f);
+    lbNotePanel.classList.add('open'); // keep it open so the result is visible
+    lbNoteToggle.classList.add('active');
+    render(); // a cover frame's note feeds the search index
+  });
   const lbCounter = document.getElementById('lbCounter');
   const lbFavorite = document.getElementById('lbFavorite');
   const lbSetCover = document.getElementById('lbSetCover');
@@ -3528,8 +3619,7 @@
     const f = currentGroupFrames[lightboxIndex];
     lbImg.src = frameImgSrc(f);
     lbImg.alt = f.movieTitle;
-    lbNote.textContent = f.note || '';
-    lbNote.closest('.lightbox-meta').style.display = f.note ? 'block' : 'none';
+    renderNotePanel(f);
     lbCounter.textContent = `${lightboxIndex + 1} / ${currentGroupFrames.length}`;
     const isCover = covers[currentGroupKey] ? covers[currentGroupKey] === f.id : lightboxIndex === 0;
     lbSetCover.classList.toggle('active', isCover);
