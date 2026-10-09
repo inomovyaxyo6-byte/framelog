@@ -2864,6 +2864,7 @@
     const groups = getMovieGroups();
     const g = groups.find(x => x.key === groupKey);
     if(!g) return;
+    logMovieView(groupKey);
     currentMovieViewKey = groupKey;
     mvEditForm.style.display = 'none';
     mvMusicForm.classList.remove('open');
@@ -3969,15 +3970,38 @@
   });
 
   // Best-effort visit logging — failures here should never affect the app.
-  async function logPageView(){
+  // A visit used to be recorded once, on load, so a film only got credited when
+  // someone arrived by deep link. Opening one from the grid counted for
+  // nothing — which is why the most-visited list sat unchanged while traffic
+  // went up thirtyfold.
+  const loggedMovieViews = new Set();
+  {
+    // Seeded synchronously, so a deep-linked film isn't counted by both the
+    // page load and the open that follows it.
+    const deepLinked = new URLSearchParams(location.search).get('movie');
+    if(deepLinked) loggedMovieViews.add(deepLinked);
+  }
+
+  async function recordView(movieKey){
     try{
-      const params = new URLSearchParams(location.search);
       await sb.from('page_views').insert({
         path: location.pathname,
-        movie_key: params.get('movie') || null,
+        movie_key: movieKey || null,
         referrer: document.referrer || null
       });
-    } catch(err){ /* ignore */ }
+    } catch(err){ /* a missed count is not worth interrupting anything over */ }
+  }
+
+  function logPageView(){
+    return recordView(new URLSearchParams(location.search).get('movie'));
+  }
+
+  // Counted once per film per visit: browsing back and forth through the same
+  // movie shouldn't look like repeat interest.
+  function logMovieView(key){
+    if(!key || loggedMovieViews.has(key)) return;
+    loggedMovieViews.add(key);
+    return recordView(key);
   }
 
   // Hints that belong to the upload form are filled in here rather than sitting
