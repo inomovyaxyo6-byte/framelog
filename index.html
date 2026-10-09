@@ -1794,6 +1794,9 @@
     // nextLevel is 'aal2' only once a factor exists. Before that there is
     // nothing to present, so aal1 is the ceiling and still counts as owner.
     isOwner = aal.nextLevel !== 'aal2' || aal.currentLevel === 'aal2';
+    // Remembered for this browser, so later visits are skipped from the first
+    // moment rather than after the session has had time to resolve.
+    if(isOwner) writeNoCount(true);
 
     const needsCode = aal.nextLevel === 'aal2' && aal.currentLevel === 'aal1';
     mfaForm.style.display = needsCode ? 'flex' : 'none';
@@ -3982,7 +3985,40 @@
     if(deepLinked) loggedMovieViews.add(deepLinked);
   }
 
+  // Most of the traffic on a quiet week was the person building the site, which
+  // made the figures useless for the one thing they're for. A browser that has
+  // ever signed in as the owner stops counting itself, and ?nocount=1 marks any
+  // other browser by hand — a private window, a phone, a second machine.
+  //
+  // The flag matters more than the live isOwner check: a page view is recorded
+  // on load, often before the session has resolved, so without something
+  // remembered locally the owner's own visits would slip through every time.
+  const NOCOUNT_KEY = 'framestill:nocount';
+
+  function readNoCount(){
+    try{ return localStorage.getItem(NOCOUNT_KEY) === '1'; }
+    catch(err){ return false; } // private windows can throw; counting is not worth an error
+  }
+
+  function writeNoCount(on){
+    try{
+      if(on) localStorage.setItem(NOCOUNT_KEY, '1');
+      else localStorage.removeItem(NOCOUNT_KEY);
+    } catch(err){ /* nothing depends on this succeeding */ }
+  }
+
+  {
+    const flag = new URLSearchParams(location.search).get('nocount');
+    if(flag === '1') writeNoCount(true);
+    else if(flag === '0') writeNoCount(false);
+  }
+
+  function shouldCountThisVisit(){
+    return !isOwner && !readNoCount();
+  }
+
   async function recordView(movieKey){
+    if(!shouldCountThisVisit()) return;
     try{
       await sb.from('page_views').insert({
         path: location.pathname,
