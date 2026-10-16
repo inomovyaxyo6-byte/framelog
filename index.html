@@ -1844,6 +1844,15 @@
     }
   }
 
+  // A stored file's path is the part of its public URL after the bucket name.
+  // Returns null for anything that isn't in our bucket — a linked image on
+  // someone else's host, or a missing thumbnail.
+  const STORAGE_MARKER = '/frame-images/';
+  function storagePathFromUrl(url){
+    const at = (url || '').indexOf(STORAGE_MARKER);
+    return at === -1 ? null : url.slice(at + STORAGE_MARKER.length);
+  }
+
   function rowToFrame(row){
     return {
       id: row.id,
@@ -1856,9 +1865,13 @@
       addedAt: new Date(row.added_at).getTime(),
       imageType: row.image_type,
       imageUrl: row.image_url,
-      imagePath: row.image_path || null,
+      // Rebuilt rather than fetched: a stored path is exactly the tail of its
+      // URL, so sending both doubled that part of the payload for nothing.
+      // Linked images live on another host and have no path, which is what the
+      // marker check comes out null for.
+      imagePath: storagePathFromUrl(row.image_url),
       thumbUrl: row.thumb_url || null,
-      thumbPath: row.thumb_path || null,
+      thumbPath: storagePathFromUrl(row.thumb_url),
       width: row.width || null,
       height: row.height || null,
       // Sampled once and kept, so browsing by colour doesn't re-download the
@@ -1917,7 +1930,20 @@
   }
 
   async function loadFrames(){
-    const { data, error } = await sb.from('frames').select('*').order('added_at', { ascending: true });
+    // Named columns rather than *, because this one request is the heaviest
+    // part of a first visit — it has to finish before anything appears, and it
+    // grows with the collection. Three columns are left out: owner_id, which
+    // the page never reads, and the two storage paths, which are the tails of
+    // the URLs already being fetched and are rebuilt below.
+    const FRAME_COLUMNS = [
+      'id', 'movie_title', 'year', 'director', 'genre', 'actors', 'note',
+      'added_at', 'image_type', 'image_url', 'thumb_url',
+      'width', 'height', 'color_r', 'color_g', 'color_b'
+    ].join(',');
+
+    const { data, error } = await sb.from('frames')
+      .select(FRAME_COLUMNS)
+      .order('added_at', { ascending: true });
     frames = error ? [] : (data || []).map(rowToFrame);
     if(error) showFatal('Could not load frames: ' + error.message);
     // Set even on failure: the loading message must not outlive the attempt.
