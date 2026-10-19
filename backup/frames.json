@@ -152,6 +152,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 73,
+    "color_g": 72,
+    "color_r": 69,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "0365fea8-29bc-40bb-a567-8661280482bf",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02p4q-amwullte.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02p4q-amwullte.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02p4q-amwullte-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02p4q-amwullte-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Tim Robbins",
       "Morgan Freeman",
       "Bob Gunton",
@@ -241,6 +271,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mt39f1uy-dllv2dfy-t.jpg",
     "width": 1600,
     "year": "2015"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 54,
+    "color_g": 45,
+    "color_r": 33,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "0535781a-9842-4958-9e61-e7e41ae8d24b",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02rf3-zgye5y5j.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02rf3-zgye5y5j.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02rf3-zgye5y5j-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02rf3-zgye5y5j-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -392,6 +452,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/murqc8vq-9jgftte5-t.jpg",
     "width": 1600,
     "year": "2013"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 75,
+    "color_g": 64,
+    "color_r": 54,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "08fe27a6-d42e-4168-b95d-cff1f8f2013b",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02q4o-umycp1qz.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02q4o-umycp1qz.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02q4o-umycp1qz-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02q4o-umycp1qz-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -901,6 +991,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 53,
+    "color_g": 60,
+    "color_r": 62,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "1741ecbd-c5db-4ea8-b85b-feee941b282d",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02qfm-d8tp4w88.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02qfm-d8tp4w88.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02qfm-d8tp4w88-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02qfm-d8tp4w88-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Daniel Day-Lewis",
       "Paul Dano",
       "Kevin J. O'Connor",
@@ -1077,6 +1197,66 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mua9nl6y-q0wmxzzi-t.jpg",
     "width": 1280,
     "year": "2009"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 13,
+    "color_g": 23,
+    "color_r": 38,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "1b2cb141-910a-4c86-8c66-a36d8093e83a",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02uh8-7i7tu5kx.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02uh8-7i7tu5kx.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02uh8-7i7tu5kx-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02uh8-7i7tu5kx-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 32,
+    "color_g": 25,
+    "color_r": 22,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "1b58564a-019e-4698-a535-b3a4f9e2102f",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02u5j-axm5qdlm.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02u5j-axm5qdlm.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02u5j-axm5qdlm-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02u5j-axm5qdlm-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -1763,6 +1943,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 78,
+    "color_g": 86,
+    "color_r": 104,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "289b1465-3011-4bbf-9782-4fbefebd29ad",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02k31-cgkltlrl.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02k31-cgkltlrl.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02k31-cgkltlrl-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02k31-cgkltlrl-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Jake Gyllenhaal",
       "Michael Peña",
       "Natalie Martinez",
@@ -1974,6 +2184,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mt2bgj4z-3l1rpmsy-t.jpg",
     "width": 1600,
     "year": "2026"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 34,
+    "color_g": 33,
+    "color_r": 30,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "2d159a46-d679-4201-911d-2f93a080954d",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02ttu-9pwtwuz9.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02ttu-9pwtwuz9.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02ttu-9pwtwuz9-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02ttu-9pwtwuz9-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -2458,6 +2698,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 14,
+    "color_g": 25,
+    "color_r": 50,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "3aa0387e-997a-4d5e-878f-f9f4510de2eb",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02iqj-isfka70s.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02iqj-isfka70s.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02iqj-isfka70s-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02iqj-isfka70s-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Brad Pitt",
       "Mélanie Laurent",
       "Christoph Waltz",
@@ -2749,6 +3019,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muu2p40r-629zfwkt-t.jpg",
     "width": 1600,
     "year": "2007"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 84,
+    "color_g": 73,
+    "color_r": 60,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "40f74c5d-6d46-49c3-b772-f54c94f61d3e",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02rsi-vtyvvew0.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02rsi-vtyvvew0.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02rsi-vtyvvew0-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02rsi-vtyvvew0-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -4224,6 +4524,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 27,
+    "color_g": 23,
+    "color_r": 16,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "6a767892-2e4f-429f-a975-b844c1a97285",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02mb5-akza0mm9.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02mb5-akza0mm9.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02mb5-akza0mm9-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02mb5-akza0mm9-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Daniel Day-Lewis",
       "Paul Dano",
       "Kevin J. O'Connor",
@@ -4732,6 +5062,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 25,
+    "color_g": 28,
+    "color_r": 33,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "754008c0-e304-4385-8917-8a8325a188d3",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02m9t-6ojmh478.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02m9t-6ojmh478.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02m9t-6ojmh478-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02m9t-6ojmh478-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Lubna Azabal",
       "Mélissa Désormeaux-Poulin",
       "Maxim Gaudette",
@@ -4757,6 +5117,36 @@
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mv3qi97y-uuibkvwc-t.jpg",
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mv3qi97y-uuibkvwc-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 66,
+    "color_g": 69,
+    "color_r": 72,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "75de0ad6-6c70-4fd5-b840-325ec2d0dcfc",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02k2i-a2gr6si6.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02k2i-a2gr6si6.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02k2i-a2gr6si6-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02k2i-a2gr6si6-t.jpg",
     "width": 1920,
     "year": "2010"
   },
@@ -4789,6 +5179,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mv2gq84m-mk96ps5k-t.jpg",
     "width": 1280,
     "year": "2001"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 54,
+    "color_g": 42,
+    "color_r": 32,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "78254eb1-85b6-4468-9c16-70945ad800d5",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02iub-gdqzk7dh.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02iub-gdqzk7dh.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02iub-gdqzk7dh-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02iub-gdqzk7dh-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -4848,6 +5268,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mv2jft4r-i9yo53t1-t.jpg",
     "width": 1920,
     "year": "2012"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 12,
+    "color_g": 16,
+    "color_r": 24,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "7a4a4998-e9a8-4ea4-a594-9b73ca3f5ca1",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02sb5-ww14fr3r.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02sb5-ww14fr3r.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02sb5-ww14fr3r-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02sb5-ww14fr3r-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -5274,6 +5724,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 21,
+    "color_g": 37,
+    "color_r": 59,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "82050bd4-82e4-4764-825d-4deb63d7c89a",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02vnr-uzkigdnu.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02vnr-uzkigdnu.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02vnr-uzkigdnu-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02vnr-uzkigdnu-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Daniel Day-Lewis",
       "Paul Dano",
       "Kevin J. O'Connor",
@@ -5453,6 +5933,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 84,
+    "color_g": 87,
+    "color_r": 100,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "894bb69f-7a09-458a-89e1-858c17ba9598",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02npz-221hp9zz.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02npz-221hp9zz.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02npz-221hp9zz-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02npz-221hp9zz-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "George MacKay",
       "Dean-Charles Chapman",
       "Mark Strong",
@@ -5480,6 +5990,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mt5wrz0b-yd949m52-t.jpg",
     "width": 1280,
     "year": "2019"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 105,
+    "color_g": 91,
+    "color_r": 79,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "899bf077-8aa8-431c-9f12-3367058ab7ad",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02i6z-1jbx9wqy.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02i6z-1jbx9wqy.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02i6z-1jbx9wqy-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02i6z-1jbx9wqy-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -6537,6 +7077,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 73,
+    "color_g": 78,
+    "color_r": 93,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "a4fe69c1-a793-4961-9992-e0a9942a1b4b",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02g46-ttjhbkbj.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02g46-ttjhbkbj.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02g46-ttjhbkbj-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02g46-ttjhbkbj-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Orlando Bloom",
       "Eva Green",
       "Jeremy Irons",
@@ -6596,6 +7166,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muczi53d-9x7qs8ar-t.jpg",
     "width": 1514,
     "year": "2025"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 108,
+    "color_g": 93,
+    "color_r": 79,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "a82d65a8-2454-48a7-89a0-fbe8877bed30",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02g48-vcwdge6t.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02g48-vcwdge6t.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02g48-vcwdge6t-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02g48-vcwdge6t-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -7134,6 +7734,36 @@
     "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
     "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mv3qi9he-bkdevwt5-t.jpg",
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mv3qi9he-bkdevwt5-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:49:56.411892+00:00",
+    "color_b": 8,
+    "color_g": 20,
+    "color_r": 44,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "b2009a57-320d-4502-a235-da862607cbcd",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve04dct-pdloknca.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve04dct-pdloknca.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve04dct-pdloknca-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve04dct-pdloknca-t.jpg",
     "width": 1920,
     "year": "2010"
   },
@@ -7690,6 +8320,66 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 98,
+    "color_g": 99,
+    "color_r": 93,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "c0ed3fce-5ffb-47d2-a79b-58dd49e597fb",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02p24-philiwl4.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02p24-philiwl4.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02p24-philiwl4-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02p24-philiwl4-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 24,
+    "color_g": 21,
+    "color_r": 21,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "c0ef1c91-d8c7-4dd8-ad9e-877d7f3fadb8",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02t7i-ofryc4f6.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02t7i-ofryc4f6.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02t7i-ofryc4f6-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02t7i-ofryc4f6-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Jake Gyllenhaal",
       "Michael Peña",
       "Natalie Martinez",
@@ -8102,6 +8792,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 30,
+    "color_g": 30,
+    "color_r": 34,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "c897a31c-fac6-4d75-9386-960c4e4e7f6b",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02qf6-uprcf99p.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02qf6-uprcf99p.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02qf6-uprcf99p-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02qf6-uprcf99p-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Aaron Taylor-Johnson",
       "Alfie Williams",
       "Ralph Fiennes",
@@ -8343,6 +9063,36 @@
   {
     "actors": [
       "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 30,
+    "color_g": 37,
+    "color_r": 38,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "cbe26858-47b5-46aa-9c3d-a2b296109d56",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02snf-vm0bc98n.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02snf-vm0bc98n.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02snf-vm0bc98n-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02snf-vm0bc98n-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
       "Tom Hardy",
       "Domhnall Gleeson",
       "Will Poulter"
@@ -8399,6 +9149,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muczi2pk-shn09cas-t.jpg",
     "width": 1516,
     "year": "2025"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 8,
+    "color_g": 20,
+    "color_r": 52,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "cdb2d6b9-46a7-469f-b339-cd61f272faef",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02g48-885jv7mr.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02g48-885jv7mr.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02g48-885jv7mr-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02g48-885jv7mr-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -9246,6 +10026,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 71,
+    "color_g": 71,
+    "color_r": 74,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "e0494574-a301-4822-b071-010847e82baf",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02oqk-dyrv43i0.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02oqk-dyrv43i0.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02oqk-dyrv43i0-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02oqk-dyrv43i0-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Jake Gyllenhaal",
       "Michael Peña",
       "Natalie Martinez",
@@ -9992,6 +10802,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 13,
+    "color_g": 19,
+    "color_r": 26,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "f0214100-602f-4b56-b917-75dcffb3a3ae",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02v2j-it8fsn2s.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02v2j-it8fsn2s.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02v2j-it8fsn2s-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02v2j-it8fsn2s-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Elijah Wood",
       "Ian McKellen",
       "Viggo Mortensen",
@@ -10079,6 +10919,36 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/muczr6x4-7d0d5e83-t.jpg",
     "width": 1600,
     "year": "2025"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 102,
+    "color_g": 102,
+    "color_r": 101,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "f27eb4b7-4062-4f14-88be-b9307e53dd0f",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02nmy-lyd54y78.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02nmy-lyd54y78.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02nmy-lyd54y78-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02nmy-lyd54y78-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
@@ -10263,6 +11133,36 @@
   },
   {
     "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 9,
+    "color_g": 13,
+    "color_r": 19,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "f4e13acf-d44d-4d7c-b10b-fd2f10aa40dc",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02nif-ib4sgx70.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02nif-ib4sgx70.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02nif-ib4sgx70-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02nif-ib4sgx70-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
       "Christian Bale",
       "Heath Ledger",
       "Aaron Eckhart",
@@ -10350,6 +11250,66 @@
     "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mt5xr0th-657eqxqa-t.jpg",
     "width": 1600,
     "year": "1994"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 14,
+    "color_g": 22,
+    "color_r": 34,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "f8df7f32-90a5-4d90-8106-76320c1e1313",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02mes-euftb3xw.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02mes-euftb3xw.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02mes-euftb3xw-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02mes-euftb3xw-t.jpg",
+    "width": 1920,
+    "year": "2010"
+  },
+  {
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy"
+    ],
+    "added_at": "2026-10-18T15:48:47.105185+00:00",
+    "color_b": 79,
+    "color_g": 83,
+    "color_r": 88,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Crime"
+    ],
+    "height": 800,
+    "id": "f9be850a-9768-4d58-a75a-f3c45182b872",
+    "image_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02k5d-r8up9lk8.jpg",
+    "image_type": "upload",
+    "image_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02k5d-r8up9lk8.jpg",
+    "movie_title": "Inception",
+    "note": "",
+    "owner_id": "a7c08668-b55b-4071-89b7-c732c5422829",
+    "thumb_path": "a7c08668-b55b-4071-89b7-c732c5422829/mve02k5d-r8up9lk8-t.jpg",
+    "thumb_url": "https://aygykkkqepqaqebprcuj.supabase.co/storage/v1/object/public/frame-images/a7c08668-b55b-4071-89b7-c732c5422829/mve02k5d-r8up9lk8-t.jpg",
+    "width": 1920,
+    "year": "2010"
   },
   {
     "actors": [
