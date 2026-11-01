@@ -3747,17 +3747,37 @@
 
     try{
       const since = (days) => new Date(Date.now() - days * 86400000).toISOString();
-      const [totalRes, weekRes, monthRes, topRes, userCountRes] = await Promise.all([
+      const [totalRes, weekRes, monthRes, topRes, refRes, userCountRes] = await Promise.all([
         sb.from('page_views').select('*', { count: 'exact', head: true }),
         sb.from('page_views').select('*', { count: 'exact', head: true }).gte('viewed_at', since(7)),
         sb.from('page_views').select('*', { count: 'exact', head: true }).gte('viewed_at', since(30)),
         sb.from('page_views').select('movie_key').not('movie_key', 'is', null),
+        sb.from('page_views').select('referrer'),
         sb.rpc('get_user_count')
       ]);
 
       const counts = {};
       (topRes.data || []).forEach(r => { counts[r.movie_key] = (counts[r.movie_key] || 0) + 1; });
       const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+      // Recorded since the beginning but never shown, which left guesswork
+      // about whether a rise came from one place or another. The host is
+      // enough: anything more is the visitor's business.
+      function sourceLabel(referrer){
+        if(!referrer) return 'Typed or bookmarked';
+        try{
+          const host = new URL(referrer).hostname.replace(/^www\./, '');
+          if(host === location.hostname) return 'Within the site';
+          return host;
+        } catch(err){ return 'Unknown'; }
+      }
+
+      const sources = {};
+      (refRes.data || []).forEach(r => {
+        const label = sourceLabel(r.referrer);
+        sources[label] = (sources[label] || 0) + 1;
+      });
+      const topSources = Object.entries(sources).sort((a, b) => b[1] - a[1]).slice(0, 6);
 
       const rows = [
         `<div class="stats-row"><span>All-time views</span><span class="num">${totalRes.count ?? 0}</span></div>`,
@@ -3771,6 +3791,13 @@
         top.forEach(([key, count]) => {
           const f = frames.find(fr => movieKey(fr.movieTitle) === key);
           const label = f ? f.movieTitle : key;
+          rows.push(`<div class="stats-row"><span>${escapeHtml(label)}</span><span class="num">${count}</span></div>`);
+        });
+      }
+
+      if(topSources.length){
+        rows.push('<div class="stats-section-title">Where visitors come from</div>');
+        topSources.forEach(([label, count]) => {
           rows.push(`<div class="stats-row"><span>${escapeHtml(label)}</span><span class="num">${count}</span></div>`);
         });
       }
